@@ -1,0 +1,5 @@
+language: java
+
+before_script: cd TP1/weka-3.8-master/weka
+
+script: ant build
