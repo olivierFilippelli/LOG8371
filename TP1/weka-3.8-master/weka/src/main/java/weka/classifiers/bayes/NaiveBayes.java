@@ -223,7 +223,7 @@ public class NaiveBayes extends AbstractClassifier implements OptionHandler,
     instances = new Instances(instances);
     instances.deleteWithMissingClass();
 
-    m_NumClasses = instances.numClasses();
+    m_NumClasses = 0;
 
     // Copy the instances
     m_Instances = new Instances(instances);
