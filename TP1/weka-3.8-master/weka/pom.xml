@@ -232,7 +232,8 @@
           <version>2.7.2</version>
           <configuration>
             <includes>
-              <include>**/*Test.java</include>
+              <include>**/TP1BayerTests.java</include>
+              <include>**/TP1StatsTests.java</include>
             </includes>
             <disableXmlReport>true</disableXmlReport>
             <redirectTestOutputToFile>true</redirectTestOutputToFile>
