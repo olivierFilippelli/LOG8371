@@ -16,7 +16,7 @@
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">127.0.0.1</stringProp>
+        <stringProp name="HTTPSampler.domain">172.17.0.1</stringProp>
         <stringProp name="HTTPSampler.port">8080</stringProp>
         <stringProp name="HTTPSampler.protocol">http</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -57,7 +57,45 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request GET /model" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -76,7 +114,45 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request GET /algorithm" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -95,12 +171,50 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/linearRegression" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -123,7 +237,45 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree/>
+        <hashTree>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Charge moyenne" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -198,8 +350,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/linearRegression" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -226,8 +378,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /cluster/SimpleKMeans" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\iris.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\iris.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -325,8 +477,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/linearRegression" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -353,8 +505,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /cluster/SimpleKMeans" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\iris.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\iris.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -381,8 +533,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/NaiveBayes" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\glass.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\glass.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/glass.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/glass.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -480,8 +632,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/linearRegression" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\contact-lenses.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/contact-lenses.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -508,8 +660,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /cluster/SimpleKMeans" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\iris.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\iris.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/iris.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -536,8 +688,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/NaiveBayes" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\glass.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\glass.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/glass.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/glass.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -564,8 +716,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /algorithm/MultilayerPerceptron" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\soybean.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\soybean.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/soybean.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/soybean.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
@@ -592,8 +744,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request POST /cluster/Hierarchical" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Pikachu\Desktop\datasets\diabetes.arff" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Pikachu\Desktop\datasets\diabetes.arff</stringProp>
+              <elementProp name="/home/alex/Documents/LOG8371/TP2/jmeter/diabetes.arff" elementType="HTTPFileArg">
+                <stringProp name="File.path">/home/alex/Documents/LOG8371/TP2/jmeter/diabetes.arff</stringProp>
                 <stringProp name="File.paramname">file</stringProp>
                 <stringProp name="File.mimetype"></stringProp>
               </elementProp>
