@@ -81,10 +81,10 @@ ZAP Scanning Report
 <td><a href="#high">High</a></td><td align="center">0</td>
 </tr>
 <tr bgcolor="#e8e8e8">
-<td><a href="#medium">Medium</a></td><td align="center">2</td>
+<td><a href="#medium">Medium</a></td><td align="center">3</td>
 </tr>
 <tr bgcolor="#e8e8e8">
-<td><a href="#low">Low</a></td><td align="center">6</td>
+<td><a href="#low">Low</a></td><td align="center">3</td>
 </tr>
 <tr bgcolor="#e8e8e8">
 <td><a href="#info">Informational</a></td><td align="center">0</td>
@@ -92,6 +92,465 @@ ZAP Scanning Report
 </table>
 <div class="spacer-lg"></div>
 <h3>Alert Detail</h3>
+<div class="spacer"></div>
+<table width="100%" class="results">
+  
+  
+  
+<tr height="24" class="risk-medium">
+<th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Application Error Disclosure</th>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Description</td><td width="80%"><p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500 Internal Server Error</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500 Internal Server Error</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/Hierarchical</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500 Internal Server Error</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi/openapi.json</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Evidence</td><td width="80%">Internal Server Error</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Evidence</td><td width="80%">Internal Server Error</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Instances</td><td width="80%">5</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Solution</td><td width="80%"><p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Reference</td><td width="80%"><p></p></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">CWE Id</td><td width="80%">200</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">WASC Id</td><td width="80%">13</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Source ID</td><td width="80%">3</td>
+</tr>
+
+</table>
+<div class="spacer"></div>
+<table width="100%" class="results">
+  
+  
+  
+<tr height="24" class="risk-medium">
+<th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Buffer Overflow</th>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Description</td><td width="80%"><p>Buffer overflow errors are characterized by the overwriting of memory spaces of the background web process, which should have never been modified intentionally or unintentionally. Overwriting values of the IP (Instruction Pointer), BP (Base Pointer) and other registers causes exceptions, segmentation faults, and other process errors to occur. Usually these errors end execution of the application in an unexpected way. </p></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">estimatorParams</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/BayesNet HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: application/json
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------1471854840170777951432989130
+Origin: http://localhost:8080
+Content-Length: 207064
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">estimatorParams</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/BayesNet HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------19136200271530477873564879713
+Origin: http://localhost:8080
+Content-Length: 41605
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/MultilayerPerceptron</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/MultilayerPerceptron HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------1799801460918405990382301749
+Origin: http://localhost:8080
+Content-Length: 22402
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/NaiveBayes</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">useSupervisedDiscretization</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/NaiveBayes HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------199079267774208501596948710
+Origin: http://localhost:8080
+Content-Length: 6040
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/BayesNet HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------19136200271530477873564879713
+Origin: http://localhost:8080
+Content-Length: 41608
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">ridge</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/linearRegression HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------19592259215072254771113355178
+Origin: http://localhost:8080
+Content-Length: 10775
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/BayesNet HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: application/json
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------1471854840170777951432989130
+Origin: http://localhost:8080
+Content-Length: 207067
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/SimpleKMeans</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/cluster/SimpleKMeans HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/x-arff
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------17542832771972984692332047420
+Origin: http://localhost:8080
+Content-Length: 22645
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/linearRegression HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------19592259215072254771113355178
+Origin: http://localhost:8080
+Content-Length: 10776
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/NaiveBayes</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">datasetUri</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Attack</td><td width="80%">POST http://localhost:8080/algorithm/NaiveBayes HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/uri-list
+Accept-Language: en-CA,en-US;q=0.7,en;q=0.3
+Referer: http://localhost:8080/
+Content-Type: multipart/form-data; boundary=---------------------------199079267774208501596948710
+Origin: http://localhost:8080
+Content-Length: 6041
+Connection: keep-alive
+Host: localhost:8080
+
+</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Instances</td><td width="80%">10</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Solution</td><td width="80%"><p>Rewrite the background program using proper return length checking.  This will require a recompile of the background executable.</p></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Other information</td><td width="80%"><p>Potential Buffer Overflow.  The script closed the connection and threw a 500 Internal Server Error</p></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Reference</td><td width="80%"><p>https://www.owasp.org/index.php/Buffer_overflow_attack</p></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">CWE Id</td><td width="80%">120</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">WASC Id</td><td width="80%">7</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Source ID</td><td width="80%">1</td>
+</tr>
+
+</table>
 <div class="spacer"></div>
 <table width="100%" class="results">
   
@@ -157,162 +616,6 @@ ZAP Scanning Report
   
   
   
-<tr height="24" class="risk-medium">
-<th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Application Error Disclosure</th>
-</tr>
-  
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Description</td><td width="80%"><p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p></td>
-</tr>
-<TR vAlign="top">
-<TD colspan="2"></TD>
-</TR>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi/openapi.json</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Evidence</td><td width="80%">Internal Server Error</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Evidence</td><td width="80%">Internal Server Error</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">2</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Solution</td><td width="80%"><p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Reference</td><td width="80%"><p></p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">CWE Id</td><td width="80%">200</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">WASC Id</td><td width="80%">13</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Source ID</td><td width="80%">3</td>
-</tr>
-
-</table>
-<div class="spacer"></div>
-<table width="100%" class="results">
-  
-  
-  
-<tr height="24" class="risk-low">
-<a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Incomplete or No Cache-control and Pragma HTTP Header Set</th>
-</tr>
-  
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Description</td><td width="80%"><p>The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.</p></td>
-</tr>
-<TR vAlign="top">
-<TD colspan="2"></TD>
-</TR>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&amp;consumer_key=40249-e88c401e1b1f2242d9e441c4&amp;locale_lang=en-CA&amp;feed_variant=default_spocs_off</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">Pragma</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Evidence</td><td width="80%">cache</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&amp;consumer_key=40249-e88c401e1b1f2242d9e441c4&amp;locale_lang=en-CA&amp;feed_variant=default_spocs_off</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Evidence</td><td width="80%">max-age=517, s-maxage=900</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">2</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Solution</td><td width="80%"><p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Reference</td><td width="80%"><p>https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">CWE Id</td><td width="80%">525</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">WASC Id</td><td width="80%">13</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Source ID</td><td width="80%">3</td>
-</tr>
-
-</table>
-<div class="spacer"></div>
-<table width="100%" class="results">
-  
-  
-  
 <tr height="24" class="risk-low">
 <a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">X-Content-Type-Options Header Missing</th>
 </tr>
@@ -330,7 +633,7 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&amp;consumer_key=40249-e88c401e1b1f2242d9e441c4&amp;locale_lang=en-CA&amp;feed_variant=default_spocs_off</td>
+<td width="20%" class="indent1">URL</td><td width="80%">http://detectportal.firefox.com/success.txt</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -411,7 +714,63 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/sitemap.xml</td>
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/NaiveBayes</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/Hierarchical</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/SimpleKMeans</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/MultilayerPerceptron</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -439,6 +798,48 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/Hierarchical</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/NaiveBayes</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui</td>
 </tr>
   
@@ -453,7 +854,63 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">4</td>
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/sitemap.xml</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-XSS-Protection</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%">Instances</td><td width="80%">15</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -506,53 +963,11 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/swagger-ui.css</td>
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/MultilayerPerceptron</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/swagger-ui-bundle.js</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/favicon-16x16.png</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi/openapi.json</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -590,11 +1005,123 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/jguweka.css</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/cluster/SimpleKMeans</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/swagger-ui.css</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/swagger-ui-bundle.js</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/NaiveBayes</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/favicon-16x16.png</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/openapi/openapi.json</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/favicon-32x32.png</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
 <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+</tr>
+  
+  
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/BayesNet</td>
+</tr>
+  
+<tr bgcolor="#e8e8e8">
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -618,11 +1145,11 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/swagger-ui/jguweka.css</td>
+<td width="20%" class="indent1">URL</td><td width="80%">http://localhost:8080/algorithm/linearRegression</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -632,7 +1159,7 @@ ZAP Scanning Report
   
   
 <tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">9</td>
+<td width="20%">Instances</td><td width="80%">14</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
@@ -656,189 +1183,6 @@ ZAP Scanning Report
   
 <tr bgcolor="#e8e8e8">
 <td width="20%">WASC Id</td><td width="80%">15</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Source ID</td><td width="80%">3</td>
-</tr>
-
-</table>
-<div class="spacer"></div>
-<table width="100%" class="results">
-  
-  
-  
-<tr height="24" class="risk-low">
-<a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">X-Content-Type-Options Header Missing</th>
-</tr>
-  
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Description</td><td width="80%"><p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p></td>
-</tr>
-<TR vAlign="top">
-<TD colspan="2"></TD>
-</TR>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/3995b685-ce94-4e6d-ad93-37fe12e5346f/event/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/995cb43d-de36-4add-bb20-eb07581cc3b2/health/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/ee475441-00cc-46e1-ae43-057041d199a7/main/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">3</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Solution</td><td width="80%"><p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Other information</td><td width="80%"><p>This issue still applies to error type pages (401, 403, 500, etc) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At "High" threshold this scanner will not alert on client or server error responses.</p></td>
-</tr>
-<TR vAlign="top">
-<TD colspan="2"></TD>
-</TR>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Reference</td><td width="80%"><p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://www.owasp.org/index.php/List_of_useful_HTTP_headers</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">CWE Id</td><td width="80%">16</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">WASC Id</td><td width="80%">15</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Source ID</td><td width="80%">3</td>
-</tr>
-
-</table>
-<div class="spacer"></div>
-<table width="100%" class="results">
-  
-  
-  
-<tr height="24" class="risk-low">
-<a name="low"></a><th width="20%">Low (Medium)</th><th width="80%">Incomplete or No Cache-control and Pragma HTTP Header Set</th>
-</tr>
-  
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Description</td><td width="80%"><p>The cache-control and pragma HTTP header have not been set properly or are missing allowing the browser and proxies to cache content.</p></td>
-</tr>
-<TR vAlign="top">
-<TD colspan="2"></TD>
-</TR>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/995cb43d-de36-4add-bb20-eb07581cc3b2/health/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/3995b685-ce94-4e6d-ad93-37fe12e5346f/event/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent1">URL</td><td width="80%">https://incoming.telemetry.mozilla.org/submit/telemetry/ee475441-00cc-46e1-ae43-057041d199a7/main/Firefox/66.0.3/release/20190410105841?v=4</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%" class="indent2">Parameter</td><td width="80%">Cache-Control</td>
-</tr>
-  
-  
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Instances</td><td width="80%">3</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Solution</td><td width="80%"><p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate; and that the pragma HTTP header is set with no-cache.</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">Reference</td><td width="80%"><p>https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching</p></td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">CWE Id</td><td width="80%">525</td>
-</tr>
-  
-<tr bgcolor="#e8e8e8">
-<td width="20%">WASC Id</td><td width="80%">13</td>
 </tr>
   
 <tr bgcolor="#e8e8e8">
